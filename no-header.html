@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class='no-header-page  wsite-theme-light'>
+
+  <div class="wrapper">
+    <div class="dusk-header">
+      <div class="nav-wrap">
+        <div class="dummy-nav">{menu}</div>
+        <div class="container">
+          <button class="hamburger">
+            <svg width="22" height="15" viewBox="0 0 22 15" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="evenodd"><path d="M20.308 2.256H1.128C.505 2.256 0 1.75 0 1.128 0 .505.505 0 1.128 0h19.18c.623 0 1.128.505 1.128 1.128 0 .623-.505 1.128-1.128 1.128zM20.308 8.462H1.128C.505 8.462 0 7.956 0 7.332c0-.622.505-1.127 1.128-1.127h19.18c.623 0 1.128.505 1.128 1.128 0 .623-.505 1.13-1.128 1.13zM20.308 14.667H1.128c-.623 0-1.128-.505-1.128-1.13 0-.622.505-1.127 1.128-1.127h19.18c.623 0 1.128.505 1.128 1.128 0 .624-.505 1.13-1.128 1.13z"/></g></svg>
+            <span class="sr-only">Menu</span>
+          </button>
+          <div class="logo">{logo}</div>
+          <div class="nav desktop-nav">
+            {menu}
+            {search}
+          </div>
+          <div class="site-utils">
+            <a href="#" class="search-toggle">
+              <svg class="icon-search" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M19.51 17.147l-4.344-4.345c-.023-.023-.05-.04-.075-.06.856-1.297 1.355-2.85 1.355-4.52 0-4.54-3.68-8.222-8.222-8.222S0 3.68 0 8.223c0 4.54 3.68 8.222 8.223 8.222 1.67 0 3.22-.5 4.518-1.354.023.025.04.052.062.076l4.345 4.345c.653.653 1.71.653 2.364 0 .653-.652.653-1.71 0-2.363zM8.224 13.595c-2.967 0-5.373-2.405-5.373-5.372S5.256 2.85 8.223 2.85c2.966 0 5.372 2.406 5.372 5.373s-2.406 5.372-5.372 5.372z" fill="currentColor" fill-rule="evenodd"/></svg>
+              <svg class="icon-close" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12.376 10l7.13-7.13c.656-.657.656-1.72 0-2.378-.656-.656-1.72-.656-2.377 0L10 7.622 2.87.493C2.212-.164 1.15-.164.49.492c-.656.657-.656 1.72 0 2.377L7.622 10l-7.13 7.13c-.656.656-.656 1.72 0 2.376.657.656 1.72.656 2.377 0l7.13-7.13 7.13 7.13c.656.656 1.72.656 2.376 0 .656-.656.656-1.72 0-2.377L12.376 10z" fill="currentColor" fill-rule="evenodd"/></svg>
+            </a>
+            <span class="header-login login-link">
+              {membership}
+              <svg width="21" height="22" viewBox="0 0 21 22" xmlns="http://www.w3.org/2000/svg"><path d="M14.146 11.472C15.266 10.204 16 8.396 16 6.455 16 3.447 13.553 1 10.545 1 7.538 1 5.09 3.447 5.09 6.455c0 1.94.733 3.75 1.855 5.017C3.547 12.372 1 14.46 1 16.455v3.18C1 20.39 1.612 21 2.364 21h16.363c.752 0 1.364-.612 1.364-1.364v-3.18c0-1.997-2.546-4.083-5.944-4.984zm-3.6-9.563c2.506 0 4.545 2.038 4.545 4.545 0 3.092-2.166 5.91-4.545 5.91C8.167 12.364 6 9.546 6 6.454 6 3.948 8.04 1.91 10.545 1.91zm8.636 17.726c0 .25-.204.455-.455.455H2.364c-.25 0-.455-.203-.455-.454v-3.18c0-1.467 2.326-3.477 5.82-4.238.833.66 1.8 1.055 2.815 1.055s1.983-.395 2.817-1.055c3.493.76 5.82 2.77 5.82 4.237v3.18z" stroke-width="1.6" stroke="currentColor" fill="currentColor" fill-rule="evenodd"/></svg>
+            </span>
+            {minicart}
+            <script id="mini-cart-template" class="template-script" type="text/html">
+              <svg width="19" height="21" viewBox="0 0 19 21" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width=".5" fill="currentColor" fill-rule="evenodd"><path d="M17.022 20.7H2.182c-.6 0-1.074-.474-1.074-1.076v-9.506c0-1.763 1.44-3.204 3.204-3.204h10.58c1.764 0 3.205 1.44 3.205 3.204v9.527c0 .58-.473 1.054-1.075 1.054zM3.258 18.547h12.688v-8.43c0-.58-.473-1.053-1.054-1.053H4.312c-.58 0-1.054.473-1.054 1.053v8.43z"/><path d="M6.42 11.602c-.603 0-1.076-.473-1.076-1.075V5.323c0-.603.473-1.076 1.075-1.076s1.075.473 1.075 1.076v5.204c0 .58-.473 1.075-1.076 1.075zM12.785 11.602c-.602 0-1.075-.473-1.075-1.075V5.28c0-.603.473-1.076 1.075-1.076s1.075.473 1.075 1.076v5.247c0 .58-.494 1.075-1.075 1.075z"/><path d="M12.785 6.398c-.602 0-1.075-.473-1.075-1.075 0-1.162-.947-2.108-2.108-2.108-1.183 0-2.107.903-2.107 2.086 0 .603-.473 1.076-1.076 1.076-.603 0-1.076-.473-1.076-1.075 0-2.322 1.914-4.214 4.258-4.214 2.344 0 4.258 1.914 4.258 4.258 0 .58-.494 1.054-1.075 1.054z"/></g></svg>
+              <span class="price-wrap">
+                <span data-content="subtotal"></span>
+                <span>/</span>
+              </span>
+              <span class="item-count" data-content="count"></span>
+              <span class="item-text" data-content="items"></span>
+            </script>
+          </div>
+        </div><!-- end container -->
+      </div>
+    </div><!-- end header -->
+    <div class="site-canvas">
+      <div class="main-wrap">
+        {{#sections}}
+          <div class="container">{content}</div>
+        {{/sections}}
+      </div><!-- end main-wrap -->
+
+      <div class="footer-wrap">
+        <div class="container">
+           <div class="footer">{footer}</div>
+        </div><!-- end container -->
+      </div><!-- end footer-wrap -->
+      <div class="mini-cart-screen"></div>
+    </div>
+  </div>
+
+  <div class="nav mobile-nav">
+    <button class="mobile-nav-toggle">
+      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12.376 10l7.13-7.13c.656-.657.656-1.72 0-2.378-.656-.656-1.72-.656-2.377 0L10 7.622 2.87.493C2.212-.164 1.15-.164.49.492c-.656.657-.656 1.72 0 2.377L7.622 10l-7.13 7.13c-.656.656-.656 1.72 0 2.376.657.656 1.72.656 2.377 0l7.13-7.13 7.13 7.13c.656.656 1.72.656 2.376 0 .656-.656.656-1.72 0-2.377L12.376 10z" fill="currentColor" fill-rule="evenodd"/></svg>
+    </button>
+    {menu}
+    <li class="mobile-login wsite-menu-item-wrap"></li>
+
+    <script id="login-template" class="template-script" type="text/html">
+      <span class="login-link wsite-menu-item" data-content="login"></span>
+    </script>
+    {search}
+  </div>
+
+  <script src="/files/theme/plugins.js"></script>
+  <script src="/files/theme/jquery.pxuMenu.js"></script>
+  <script src="/files/theme/jquery.trend.js"></script>
+  <script src="/files/theme/jquery.revealer.js"></script>
+  <script src="/files/theme/jquery.loadTemplate.min.js"></script>
+  <script src="/files/theme/custom.js"></script>
+</body>
+
+</html>

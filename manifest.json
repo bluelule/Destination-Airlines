@@ -1,0 +1,81 @@
+{
+  "responsive": true,
+  "glyph-icons": true,
+  "enableEditorJS": true,
+  "description": "Dusk gives your website an extra wash of color and sophisticated design elements. The professional palettes and fixed navigation allow your content and brand to remain beautifully positioned on all pages.",
+  "features": [
+    "responsive",
+    "css-buttons",
+    "social-icons",
+    "full-width-header",
+    "navigation-center",
+    "color-palettes"
+  ],
+  "color-support": {
+    "primary": "#569abd"
+  },
+  "color-presets": [
+    {
+      "primary": "#569abd",
+      "variation": "blue"
+    },
+    {
+      "primary": "#f6304e",
+      "variation": "red"
+    },
+    {
+      "primary": "#f5a623",
+      "variation": "orange"
+    },
+    {
+      "primary": "#95c696",
+      "variation": "green"
+    },
+    {
+      "primary": "#47e4c2",
+      "variation": "aqua"
+    }
+  ],
+  "custom-options": [
+    {
+      "name": "banner-overlay",
+      "title": "Show banner overlay",
+      "type": "toggle",
+      "default": true,
+      "is-body-class": true,
+      "is-less-var": false
+    },
+    {
+      "name": "color-banner-overlay",
+      "title": "Banner overlay",
+      "type": "color",
+      "default": "#569abd",
+      "is-body-class": false,
+      "is-less-var": true
+    },
+    {
+      "name": "alternate-banner",
+      "title": "Alternate banner style",
+      "type": "toggle",
+      "default": false,
+      "is-body-class": true,
+      "is-less-var": false
+    },
+    {
+      "name": "sticky-nav",
+      "title": "Sticky Navigation",
+      "type": "toggle",
+      "default": true,
+      "is-body-class": true,
+      "is-less-var": false
+    },
+    {
+      "name": "minicart-total",
+      "title": "Minicart total in header",
+      "type": "toggle",
+      "default": true,
+      "is-body-class": true,
+      "is-less-var": false
+    }
+  ]
+}
