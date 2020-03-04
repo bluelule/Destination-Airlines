@@ -1,0 +1,135 @@
+#wsite-search-header {
+  border-bottom: 0;
+
+  h2 {
+    .page-title-text-style;
+    line-height: 1;
+
+    @media screen and (max-width: @bp-small-max) {
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+#wsite-search-form-container {
+  @media screen and (max-width: @bp-small-max) {
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+#wsite-search-sidebar {
+  .wsite-search-filter-entries,
+  .wsite-search-facet-entries {
+    input[type=checkbox] {
+      .sr-only;
+
+      &:checked {
+        ~ a {
+          color: @color-link-hover;
+        }
+      }
+    }
+
+    a {
+      .link-list-text-style;
+    }
+  }
+
+  h3 {
+    .sidebar-heading-text-style;
+    padding-bottom: 10px;
+    border-bottom: 1px solid @color-borders;
+  }
+
+  .wsite-search-filter {
+    margin-bottom: 30px;
+  }
+}
+
+
+#wsite-search-query {
+  .wsite-form-input;
+}
+
+#wsite-search-results {
+  h3 {
+    .page-subtitle-text-style;
+  }
+}
+
+#wsite-search-product-results {
+  a {
+    text-decoration: none;
+  }
+
+  .wsite-search-product-result {
+    text-align: center;
+  }
+
+  .wsite-search-product-image-container {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .wsite-search-product-name {
+    .product-grid-title-text-style;
+  }
+
+  .wsite-search-product-price {
+    .heading-text-style;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #wsite-search-sidebar {
+    position: relative;
+    z-index: 7;
+    overflow-y: hidden;
+    width: 100%;
+    max-height: 35px;
+    padding: 0;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    .transition(all 500ms ease-in-out);
+
+    &::before {
+      display: block;
+      width: 100%;
+      padding: 10px 18px;
+      box-sizing: border-box;
+      text-align: center;
+      text-transform: uppercase;
+      content: 'VIEW SEARCH FILTERS\00a0\00a0\25be';
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    &.sidebar-expanded {
+      max-height: 1000px;
+      cursor: default !important;
+    }
+
+    &.sidebar-expanded:before {
+      content: 'CLOSE\00a0\00a0\25b4';
+    }
+  }
+
+  #wsite-search-results {
+    width: 100%;
+  }
+
+  #wsite-search-product-results .wsite-search-product-result {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .wsite-search-facet-price input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 6px !important;
+  }
+}

@@ -1,0 +1,82 @@
+/* Forms */
+.wsite-form-label {
+  .font-primary;
+  display: inline-block;
+  padding: 0 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wsite-form-sublabel {
+  display: none;
+}
+
+.wsite-form-radio-container {
+  margin-bottom: 15px;
+}
+
+.form-radio-container {
+  .input-style;
+  border-bottom: 0;
+
+  &:hover {
+    input {
+      border-color: @color-primary !important;
+    }
+  }
+}
+
+.wsite-form-input,
+.wsite-search-element-input {
+  .input-style;
+  height: auto;
+  padding: 8px 0 !important;
+  margin-bottom: 15px;
+  
+  textarea& {
+    border: 1px solid @color-borders;
+  }
+}
+
+.wsite-form-input:focus,
+.wsite-search-element-input:focus,
+.form-select:focus,
+.wsite-form-field select:focus,
+.wsite-com-product-option-groups select:focus {
+  border-color: darken(@color-borders, 15%);
+}
+
+.form-select,
+.wsite-form-field select,
+.wsite-com-product-option-groups select {
+  .input-style;
+  height: 40px;
+  padding: 8px !important;
+  background: transparent url(images/arrow.svg) right 3px center no-repeat;
+  box-sizing: border-box;
+}
+
+.formlist,
+.wsite-editor .formlist {
+  min-height: inherit;
+}
+
+.wsite-search-element-submit,
+.wsite-editor .wsite-search-element-submit {
+  top: 25%;
+  margin-top: -2px;
+}
+
+.wsite-search-button {
+  display: none;
+}
+
+/* Form errors */
+.wsite-form-container .form-input-error {
+  border: 1px solid red !important;
+}
+
+.form-field-error .wsite-form-radio-container {
+  border: none;
+}

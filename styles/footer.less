@@ -1,0 +1,55 @@
+/* Footer */
+.footer-wrap {
+  width: 100%;
+  border-top: 1px solid @color-borders;
+  background-color: @color-footer-background;
+
+  .wsite-footer {
+    max-width: 100%;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    .heading-text-style;
+    text-transform: uppercase;
+  }
+
+  .wsite-form-input {
+    background-color: transparent;
+  }
+
+  .paragraph {
+    a {
+      text-decoration: none;
+      font-weight: normal;
+      letter-spacing: normal;
+    }
+  }
+}
+
+/* Social */
+.wsite-social .wsite-social-item {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 50%;
+  color: @color-footer-background !important;
+  line-height: 25px;
+  font-size: 11px;
+  text-align: center;
+  text-decoration: none;
+  background-color: @color-link !important;
+
+  &::before {
+    position: relative;
+    left: 1px;
+  }
+
+  &:hover {
+    background-color: @color-link-hover !important;
+  }
+}

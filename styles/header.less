@@ -1,0 +1,265 @@
+/* Mobile app */
+body.wsite-checkout-page .dusk-header {
+  position: absolute !important;
+}
+
+/* Header */
+.dusk-header {
+  .offcanvas;
+  .transition(opacity 0.6s ease-in 0.3s transform 0.3s ease-out);
+  position: relative;
+  width: 100%;
+  z-index: 13;
+  box-sizing: border-box;
+  background: @color-header-background;
+  opacity: 0;
+
+  body.reveal-elements &,
+  body.wsite-native-mobile-editor & {
+    opacity: 1;
+  }
+
+  body.sticky-nav-on & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-top: 1px solid @color-borders;
+    content: '';
+  }
+
+  .nav-wrap {
+    width: 100%;
+  }
+
+  .container {
+    .flex-display;
+    .justify-content(space-between);
+    .align-items(center);
+    .transition(height 0.2s ease);
+    height: @height-header;
+
+    body.header-compressed & {
+      height: 80px;
+    }
+
+    @media screen and (max-width: @bp-small-max) {
+      .transition(all 0.2s ease);
+      height: @height-header-mobile;
+      padding-right: 20px;
+      padding-left: 20px;
+
+      body.header-compressed & {
+        height: 65px;
+      }
+    }
+  }
+
+  .hamburger {
+    padding: 8px;
+    background-color: transparent;
+    border: 0;
+    text-align: left;
+    color: @color-title;
+
+    @media screen and (min-width: @bp-small) {
+      display: none;
+    }
+  }
+
+  .logo {
+    line-height: 1;
+
+    @media screen and (min-width: @bp-small) {
+      margin-right: 54px;
+    }
+  }
+
+  .logo .wsite-logo {
+    vertical-align: auto !important;
+  }
+
+  .logo a {
+    .font-primary;
+    display: block;
+    overflow: hidden;
+    letter-spacing: 0.04375em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+
+    @media screen and (min-width: @bp-small) {
+      font-size: 36px;
+    }
+  }
+
+  .logo img {
+    display: block;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 40px;
+  }
+
+  .hamburger,
+  .site-utils {
+    @media screen and (max-width: @bp-small-max) {
+      .flex-basis(100px);
+      .justify-content(flex-end);
+    }
+  }
+
+  .icon-search,
+  .login-link svg {
+    width: auto;
+    height: 18px;
+  }
+
+  // Search
+  .wsite-search {
+    .align-items(center);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    background-color: @color-header-background;
+
+    &.animating,
+    &.visible {
+      .flex-display;
+    }
+
+    &.animating-in,
+    &.animating-out {
+      width: 0;
+      .transition(all 0.3s ease-out);
+    }
+
+    &.visible {
+      width: 100%;
+    }
+  }
+
+  #wsite-header-search-form {
+    width: 80%;
+  }
+
+  .wsite-search-input {
+    .font-primary;
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    border: 0;
+    background: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .wsite-search-button {
+    display: none;
+  }
+}
+
+// Site Utils
+.site-utils {
+  .flex-display;
+  .justify-content(space-between);
+  .align-items(center);
+
+  a {
+    letter-spacing: normal;
+  }
+}
+
+.search-toggle,
+.header-login {
+  padding: 4px;
+  line-height: 0;
+
+  &:hover {
+    color: @color-primary;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  &.is-active {
+    .icon-close {
+      display: block;
+    }
+
+    .icon-search {
+      display: none;
+    }
+  }
+}
+
+.search-toggle {
+  display: none;
+
+  @media screen and (max-width: @bp-small-max) {
+    display: none !important;
+  }
+
+  body.has-site-search & {
+    display: inline-block;
+  }
+}
+
+// Membership
+.login-link {
+  position: relative;
+  cursor: pointer;
+  color: @color-link;
+
+  .dusk-header & {
+    margin-left: 30px;
+    line-height: 1;
+
+    @media screen and (max-width: @bp-small-max) {
+      display: none !important;
+    }
+  }
+
+  #member-login {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+body.wsite-editor  {
+  .search-toggle {
+    display: none;
+  }
+  .wsite-search {
+    display: block;
+    width: auto;
+    height: auto;
+    left: auto;
+    right: -30px;
+    top: calc(~'50% - 12px');
+    color: #4f4f4e;
+
+    input {
+      display: none;
+    }
+  }
+}

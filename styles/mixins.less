@@ -1,0 +1,143 @@
+// Text styles
+.font-primary {
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title-text-style {
+  font-size: 52px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  color: @color-title;
+  font-weight: bold;
+}
+
+.page-subtitle-text-style {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: @color-title;
+}
+
+.heading-text-style {
+  .font-primary;
+  color: @color-title;
+  margin-bottom: 0.75em;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+
+.banner-p-text-style {
+  .font-primary;
+  margin-bottom: 25px;
+  color: inherit;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: normal;
+
+  @media screen and (min-width: @bp-small) {
+    font-size: 16px;
+  }
+}
+
+.sidebar-heading-text-style {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1875em;
+  color: @color-title;
+  text-transform: uppercase;
+}
+
+.link-text-style {
+  color: @color-link;
+  text-decoration: underline;
+  font-weight: 600;
+  letter-spacing: 0.09375em;
+}
+
+.link-list-text-style {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.143em;
+  color: @color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: @color-link-hover;
+  }
+}
+
+// Product styles
+
+.product-price-text-style {
+  color: @color-primary;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.product-option-text-style {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.product-grid-title-text-style {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+// Form styles
+.input-style {
+  .font-primary;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: @color-input;
+  font-weight: 400;
+  line-height: normal;
+  border: 0;
+  border-bottom: 1px solid @color-borders;
+  border-radius: 0;
+  background: transparent;
+  .transition(border-color 0.2s ease);
+}
+
+// Utility
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Layout
+.offcanvas {
+  .transition(transform 0.3s ease-out);
+
+  body.minicart-visible & {
+    .transform(translateX(-100vw));
+
+    @media screen and (min-width: @bp-small) {
+      .transform(translateX(-@width-minicart));
+    }
+  }
+}

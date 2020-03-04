@@ -1,0 +1,173 @@
+#blogTable {
+  .blog-sidebar {
+    h2 {
+      .sidebar-heading-text-style;
+      padding-bottom: 10px;
+      border-bottom: 1px solid @color-borders;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    a {
+      .link-list-text-style;
+    }
+  }
+}
+
+.blogCommentReplyWrapper iframe {
+  height: 560px !important;
+}
+
+#commentPostDiv .field input[type=text],
+#commentPostDiv .field textarea {
+  height: auto;
+  padding: 8px 12px;
+  background: transparent;
+  box-sizing: border-box;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+#commentPostDiv .field input[type=text]:focus,
+#commentPostDiv .field textarea:focus {
+  border: 1px solid @color-link;
+}
+
+#commentSubmit {
+  .wsite-button;
+  .wsite-button-normal;
+  .wsite-button-small;
+
+  &:hover {
+    background-color: @color-button-hover;
+  }
+
+  > span {
+    .button-style;
+    color: @color-button-text;
+  }
+
+}
+
+.blogCommentOptions .blog-button {
+  .wsite-button;
+  .wsite-button-highlight;
+  .wsite-button-small;
+
+  &:hover {
+    background-color: @color-button-secondary-text;
+
+    > span {
+      color: @color-button-text;
+    }
+
+  }
+
+  > span {
+    .button-style;
+    color: @color-button-secondary-text;
+  }
+
+}
+
+#commentSubmit span {
+  background: none;
+}
+
+#commentArea {
+  border-top: solid 1px @color-borders;
+  padding-top: 20px;
+}
+
+#commentAreaTitle,
+.blogCommentHeading .blogCommentAuthor {
+  font-weight: 400;
+}
+
+.blogCommentHeading .blogCommentHeadingInner {
+  height: auto;
+}
+
+.blogCommentWrap .blogCommentHeading .blogCommentHeadingInner .blogCommentAuthor .name {
+  text-shadow: none;
+  height: auto;
+  line-height: 1;
+  color: @color-link !important;
+  float: none;
+}
+
+.blogCommentHeading .blogCommentHeadingInner .blogCommentAuthor .link {
+  margin: 0 5px;
+  float: none;
+  display: inline-block;
+}
+
+.blog-post .blog-header h2.blog-title {
+  margin-bottom: 20px !important;
+}
+
+#wsite-content .blog-post .blog-separator {
+  border-color: @color-borders;
+}
+
+#wsite-content #commentAreaTitle,
+#wsite-content #commentReplyTitle,
+#commentArea .blogCommentText p {
+  padding: 0;
+}
+
+#commentAreaTitle,
+.blogCommentHeading,
+.blogCommentText p {
+  font-family: inherit;
+}
+
+.blogCommentWrap {
+  padding: 20px;
+}
+
+.blogCommentWrap .blogCommentHeading,
+.blogCommentWrap .blogCommentHeadingInner,
+.blogCommentWrap .blogCommentAuthor {
+  background: none !important;
+  line-height: 1;
+}
+
+.blogCommentHeading {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.blogCommentHeading .blogCommentAuthor,
+.blogCommentHeading .blogCommentDate {
+  float: none;
+  text-align: left;
+  height: auto;
+  line-height: 1;
+  padding: 0;
+  display: inline;
+  vertical-align: baseline;
+}
+
+.blogCommentHeading .blogCommentHeadingInner .blogCommentDate {
+  color: #666;
+  font-size: 13px;
+}
+
+.blogCommentHeading .blogCommentDate {
+  color: #333;
+}
+
+.blogCommentText {
+  padding: 0;
+}
+
+.blogCommentWrap .blogCommentText p {
+  color: #999;
+  font-size: 14px;
+}

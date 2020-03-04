@@ -1,0 +1,113 @@
+/* Store */
+#wsite-com-store {
+  .wsite-com-category-subcategory-image-wrap {
+    height: 100%;
+    border: 0;
+  }
+
+  .wsite-com-category-subcategory-name {
+    top: 0;
+  }
+
+  .wsite-com-category-subcategory-name-bg {
+    position: relative;
+    background-color: #000;
+    opacity: 0;
+    box-sizing: border-box;
+    .transition(all 400ms ease-in-out);
+  }
+
+  .wsite-com-category-subcategory-link:hover {
+    .wsite-com-category-subcategory-name-bg {
+      opacity: 0.4;
+    }
+
+    .wsite-com-category-subcategory-name-text {
+      .translate(0, 0);
+      opacity: 1;
+    }
+
+  }
+
+  .wsite-com-category-subcategory-name-text {
+    .translate(0, 25%);
+    .transition(all 0.2s ease-out);
+    .header-text-style;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: none;
+    box-sizing: border-box;
+    text-shadow: none;
+    color: #fff;
+    opacity: 0;
+  }
+
+  .wsite-com-category-subcategory-name-text span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  #wsite-com-product-title {
+    font-weight: inherit;
+  }
+
+  .wsite-com-category-product-link, 
+  .wsite-com-category-product-link-featured {
+    text-align: center;
+
+    .wsite-com-category-product-image-wrap,
+    .wsite-com-category-product-featured-image-wrap {
+      .transition(all 300ms ease);
+      opacity: 1;
+      border: 0;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    .wsite-com-category-product-name {
+      .product-grid-title-text-style;
+    }
+  }
+
+  #wsite-com-hierarchy {
+    .wsite-com-link {
+      .link-list-text-style;
+    }
+
+    .wsite-link-unselected {
+      color: @color-link;
+    }
+
+    .wsite-link-unselected:hover {
+      color: @color-link-hover;
+    }
+
+    .wsite-com-link-text {
+      margin-bottom: 10px;
+      line-height: 1.5em;
+    }
+  }
+
+  #wsite-com-product-list {
+    .wsite-com-product-price {
+      .heading-text-style;
+      text-align: center;
+    }
+  }
+}
+
+/* Checkout */
+.wsite-com-checkout-section .wsite-form-field select,
+.wsite-com-checkout-section .wsite-form-field input,
+.wsite-com-checkout-section .wsite-form-field .select2-container {
+  height: 40px;
+}

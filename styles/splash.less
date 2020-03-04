@@ -1,0 +1,62 @@
+.splash-page {
+  .site-canvas {
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .main-wrap,
+  .weebly-area,
+  #wsite-content,
+  .wsite-section-wrap,
+  .wsite-body-section {
+    height: 100%;
+  }
+
+  .wsite-body-section {
+    position: relative;
+  }
+
+  .wsite-section-content {
+    @local-pos: 0;
+    .flex-display;
+    position: absolute;
+    top: @local-pos;
+    right: @local-pos;
+    bottom: @local-pos;
+    left: @local-pos;
+    overflow: auto;
+    min-height: 300px;
+
+    .container {
+      width: auto;
+      margin: auto;
+      max-width: none;
+      padding: 10vw;
+    }
+
+    .wsite-section-elements {
+      width: 100%;
+      max-width: 1170px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+  }
+
+  .wsite-content-title {
+    .page-title-text-style;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .paragraph,
+  p {
+    .banner-p-text-style;
+    text-align: center;
+  }
+
+  .footer {
+    display: none;
+  }
+}

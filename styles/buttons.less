@@ -1,0 +1,82 @@
+.button-style {
+  .font-primary;
+  display: block;
+  float: none;
+  height: auto;
+  padding: 0.625em 1.9375em;
+  margin: 0;
+  background: none;
+  letter-spacing: 0.0625em;
+  text-transform: capitalize;
+  white-space: normal;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.wsite-button,
+.wsite-editor .wsite-button {
+  .wsite-button-normal; // give buttons that don't have the normal / highlight class the normal style
+  .transition(background-color 0.2s ease-out);
+  display: inline-block;
+  height: auto;
+  padding: 0;
+  background-image: none;
+  text-align: center;
+
+  .wsite-button-inner {
+    .button-style;
+  }
+}
+
+.wsite-button-large,
+.wsite-editor .wsite-button-large {
+  font-size: 16px;
+}
+
+.wsite-button-small,
+.wsite-editor .wsite-button-small {
+  font-size: 14px;
+}
+
+.wsite-button-normal,
+.wsite-editor .wsite-button-normal {
+  background-color: @color-primary;
+
+  &:hover {
+    background-color: @color-button-hover;
+  }
+
+  .wsite-button-inner {
+    color: @color-button-text;
+  }
+}
+
+.wsite-button-highlight,
+.wsite-editor .wsite-button-highlight {
+  background-color: @color-button-text;
+  box-shadow: 0 0 0 1px @color-link inset;
+
+  &:hover {
+    background-color: @color-button-secondary-text;
+    
+    .wsite-button-inner {
+      color: @color-button-text;
+    }
+  }
+
+  .wsite-button-inner {
+    color: @color-button-secondary-text;
+  }
+}
+
+.wsite-button,
+.wsite-button-highlight,
+.wsite-button-large.wsite-button-highlight,
+.wsite-editor .wsite-button-highlight,
+.wsite-editor .wsite-button-large.wsite-button-highlight {
+  background-image: none;
+
+  .wsite-button-inner {
+    background-image: none;
+  }
+}

@@ -1,0 +1,248 @@
+/* Media Queries */
+@media screen and (max-width: @bp-small-max) {
+  #icontent.no-header-page .main-wrap .container {
+    padding-top: 100px;
+  }
+  /* Headline overrides*/
+  .banner h2 span,
+  .banner h2 font,
+  .banner p span,
+  .banner p font {
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  /* Banner */
+  .banner-wrap {
+    box-sizing: border-box;
+  }
+  .banner-wrap .container {
+    padding: 80px 20px;
+  }
+
+  /* Content */
+  .main-wrap .container {
+    padding: 30px 20px;
+  }
+  /* Footer */
+  .footer-wrap .container {
+    padding: 0;
+  }
+  .footer-wrap .wsite-footer {
+    width: 100%;
+    padding: 40px 20px 20px;
+    box-sizing: border-box;
+  }
+  .footer-wrap td.wsite-multicol-col {
+    margin-bottom: 25px !important;
+  }
+
+  /* Splash page */
+  .splash-page .main-wrap > .container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  /* Store */
+  #wsite-com-store .wsite-com-category-subcategory-name {
+    border-width: 10px;
+  }
+  /* Login / Register modal */
+  .w-ui.ui-dialog.popup-modal .ui-dialog-content {
+    position: relative;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body.page-has-banner.affix {
+    padding-top: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  /* Sections */
+  .wsite-section {
+    height: auto !important;
+  }
+  /* Gallery */
+  .galleryCaptionHolder {
+    display: none;
+  }
+  .fullwidth-mobile {
+    width: 100% !important;
+  }
+  .fullwidth-mobile .galleryCaptionHolder {
+    display: block !important;
+  }
+  /* Table override */
+  td.wsite-multicol-col {
+    float: none;
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  /* No header page */
+  .no-header-page .main-wrap .container {
+    padding-top: 70px;
+  }
+  /* Splash page */
+  .splash-page .content-wrap {
+    padding: 0;
+  }
+  .splash-page .content-wrap h2 {
+    font-size: 2.75em;
+    line-height: 1.25em;
+  }
+  .splash-page .content-wrap p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+  /* Blog */
+  #blogTable td {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #blogTable td.blog-sidebar {
+    width: 100%;
+  }
+  #blogTable td .blog-body {
+    float: none !important;
+  }
+  #blogTable td .column-blog {
+    float: none;
+  }
+  /* Store */
+  #wsite-com-store {
+    /* Category Dropdown */
+  }
+  #wsite-com-store .wsite-com-category-subcategory-group .wsite-com-column,
+  #wsite-com-store .wsite-com-category-product-featured-group .wsite-com-column,
+  #wsite-com-store .wsite-com-category-product-group .wsite-com-column {
+    float: left;
+    width: 50% !important;
+  }
+  #wsite-com-store .wsite-com-sidebar {
+    position: relative;
+    float: none !important;
+    z-index: 7;
+    width: 100%;
+    min-height: 35px;
+    margin: 0 auto 15px;
+    padding: 0;
+    text-align: center;
+  }
+  #wsite-com-store .wsite-com-sidebar:before {
+    display: block;
+    width: 100%;
+    padding: 10px 18px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    content: 'VIEW ALL CATEGORIES\00a0\00a0\25be';
+    .font-primary;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }
+  #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-height: 0px;
+    padding: 0;
+    margin: 0 auto .25em;
+    background: white;
+    box-sizing: border-box;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy > ul {
+    width: 100%;
+    padding: 0;
+  }
+  #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy > ul li {
+    margin-bottom: 15px;
+  }
+  #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy .wsite-link-unselected {
+    color: @color-link;
+  }
+  #wsite-com-store .wsite-com-sidebar.sidebar-expanded {
+    cursor: default !important;
+  }
+  #wsite-com-store .wsite-com-sidebar.sidebar-expanded:before {
+    content: 'CLOSE\00a0\00a0\25b4';
+  }
+  #wsite-com-store .wsite-com-sidebar.sidebar-expanded #wsite-com-hierarchy {
+    max-height: 1000px;
+    padding: 10px 0;
+  }
+  #wsite-com-store .wsite-com-content-with-sidebar {
+    margin-left: 0;
+  }
+  /* Product */
+  div.wsite-product-image-wrap {
+    width: 100% !important;
+  }
+  .wsite-product .wsite-product-top {
+    width: 100%;
+  }
+  .wsite-product .wsite-product-button-wrap {
+    width: auto;
+  }
+  #wsite-com-product-images {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #wsite-com-product-info {
+    width: 100%;
+    margin-left: 0;
+  }
+  #wsite-com-product-images-strip .wsite-com-product-images-secondary-outer {
+    margin-bottom: 10px;
+  }
+  /* Checkout */
+  #wsite-com-checkout-list .wsite-form-input,
+  #wsite-com-checkout-summary-list .wsite-form-input {
+    width: 20px;
+  }
+  #wsite-com-checkout-list .wsite-form-input.wsite-coupon-input,
+  #wsite-com-checkout-summary-list .wsite-form-input.wsite-coupon-input {
+    width: 100%;
+    max-width: 95px;
+  }
+  #wsite-com-checkout-list td {
+    padding: 10px 0 20px;
+  }
+  #wsite-com-checkout-list .wsite-remove-button,
+  #wsite-com-checkout-summary-list .wsite-remove-button {
+    top: 44px;
+    left: -10px;
+  }
+  .wsite-com-continue-shopping .caret {
+    display: inline-block;
+    margin-top: 2px;
+  }
+  /* Secure Checkout */
+  .wsite-com-checkout-payment-column,
+  .wsite-com-checkout-summary-column {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* Store */
+  #wsite-com-store .wsite-com-category-subcategory-group .wsite-com-column,
+  #wsite-com-store .wsite-com-category-product-featured-group .wsite-com-column,
+  #wsite-com-store .wsite-com-category-product-group .wsite-com-column {
+    float: none;
+    width: 100% !important;
+  }
+}
